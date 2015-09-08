@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>My Wordpress Blog</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Wordpress Blog</title>
 </head>
 <body>
-<header>
-<h1>My Blog</h1>                                                             
-<h3>Another Wordpress blog</h3>
-<hr />
-</header>
-<main>
-<p>Hey!</p>
-<p>This is a sample email to test your template
-</p>
-<p>If you're not skilled in HTML/CSS email coding, I strongly recommend to leave the default template as it is. It has been tested on various and popular email clients like Gmail, Yahoo Mail, Hotmail/Live, Thunderbird, Apple Mail, Outlook and many more. </p>
-<p>If you have any problem or any suggestions to improve this plugin, please let me know</p>
-<hr />
-</main>
-<footer>
-<p><img src="images/calendar.png" alt="calendar" /> Email sent the 28 novembre 2010 @ 17 h 55 min <br/>
-<img src="images/comment.png" alt="comment" /> For any request, please contact <a href="mailto:plugins@artyshow-studio.fr">plugins@artyshow-studio.fr</a>
-<img src="images/wordpress.png" alt="wordpress logo" align="right" /></p>
-</footer>
+<!--для всего контента нцжно использовать дополнительную обертку типа .wrapper-->
+<div class="wrapper">
+  <header>
+    <h1>My Blog</h1>
+
+    <h3>Another Wordpress blog</h3>
+    <!--можно не использовать дополнительный элемент hr, а вместо него css- border-bottom-->
+    <hr/>
+  </header>
+  <main>
+    <p>Hey!</p>
+
+    <p>This is a sample email to test your template
+    </p>
+
+    <p>If you're not skilled in HTML/CSS email coding, I strongly recommend to leave the default template as it is. It
+      has been tested on various and popular email clients like Gmail, Yahoo Mail, Hotmail/Live, Thunderbird, Apple
+      Mail, Outlook and many more. </p>
+
+    <p>If you have any problem or any suggestions to improve this plugin, please let me know</p>
+    <hr/>
+  </main>
+  <footer>
+    <p><img src="images/calendar.png" alt="calendar"/> Email sent the <time>28 novembre 2010 @ 17 h 55 min</time> <br/>
+      <img src="images/comment.png" alt="comment"/> For any request, please contact <a
+        href="mailto:plugins@artyshow-studio.fr">plugins@artyshow-studio.fr</a>
+      <img src="images/wordpress.png" alt="wordpress logo" align="right"/></p>
+  </footer>
+</div>
 </body>
 </html>
