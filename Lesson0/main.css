@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+}
+
+.wrapper {
+	border: 1px solid #d5d5d5;
+	margin: 20px auto;
+	padding: 30px 30px 10px;
+	width: 550px;
+	height: 350px;
+	background-image: -webkit-linear-gradient(top, #efefef, white 10%);   
+	                          linear-gradient(to bottom, #efefef, white 10%);        
+}
+
+header, main {
+	border-bottom: 1px solid #d5d5d5;
+	padding-bottom: 20px;
+	font-family: Tahoma;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+h1, h3 {
+	display: inline;
+	font-weight: lighter;
+}
+
+
+h1 {
+	color: #2992c1;
+}
+
+
+h3 {
+	color: #575757;
+	float: right;
+}
+
+
+main {
+	padding-top: 20px;
+}
+
+ 
+main>p {
+ 	line-height: 20px;
+}
+
+
+footer {
+	padding-top: 15px;
+ 	color: #b9b9b9;
+ 	font-family: Tahoma;
+ 	font-size: 12px;
+ }
+
+ footer>p {
+ 	margin:0;
+ }
+
+ 
+#calendar:before {
+	content: '';
+	display:inline-block;
+	width:19px;
+	height:15px;
+	background: url(images/sprite0.png) no-repeat -38px 0;
+}
+
+#comment:before {
+	content: '';
+	display:inline-block;
+	width:19px;
+	height:15px;
+	background: url(images/sprite0.png) no-repeat -57px 0;
+}
+
+#wordpressLogo:before {
+	content: '';
+	display:inline-block;
+	width:35px;
+	height:35px;
+	background: url(images/sprite0.png) no-repeat 0 0;
+	position:relative;
+	left: 500px;
+	bottom: 35px;
+}
+
+a[href^='mailto'] {
+	color: #2992c1;
+}
+
+
+
+
