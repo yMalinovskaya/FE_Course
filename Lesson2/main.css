@@ -1,0 +1,25 @@
+body {
+	background-color: #fcffe9;
+}
+
+
+.container {
+	margin: 2% auto;
+	padding: 2%;
+	border: 3px solid #00cd00;
+	width: 50%;
+	background: #f3fff3;
+}
+
+h1 {
+	color: #006900;
+}
+
+legend {
+	color: #009100;
+}
+
+label {
+	color: #ffc967;
+}
+

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8"/>
+      <title>HTML Registration Form</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="main.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+  <div class="container">
+
+          <header>
+            <h1>Please fill in our registration form</h1>
+          </header>
+
+          <form action="" method="post" class="form-horizontal">
+
+          <fieldset>
+             <legend>
+               Your personal information: 
+             </legend>
+
+
+             <div class="form-group">
+                 <label for="name" class="col-md-2 control-label">Name *</label>
+                 <div class="col-md-10">
+                   <input type="text" class="form-control input-sm" name="name" id="name" pattern="[a-zA-Z\- ]+" title="Please enter your real name" placeholder="Enter your name" required autofocus/></br>
+                 </div>
+             </div>
+
+             <div class="form-group">
+                 <label for="surname" class="col-md-2 control-label">Surname *</label>
+                 <div class="col-md-10"> 
+                   <input type="text" class="form-control input-sm" name="surname" id="surname" pattern="[a-zA-Z\- ]+" title="Plese enter your real surname" placeholder="Enter your surname" required/></br>
+                 </div>  
+             </div>  
+           
+
+            <div class="form-group">
+                 <label for="username" class="col-md-2 control-label">Username *</label>
+                 <div class="col-md-10"> 
+                   <input type="text" class="form-control input-sm" name="username" id="username" placeholder="Enter your username" pattern="[a-z0-9_-]{3,16}" title="Minimum 3 letters or numbers! &ldquo;_&rdquo; and &ldquo;-&rdquo; are allowed" required  maxlength="16"/></br>
+                 </div>  
+             </div>  
+            
+
+             <div class="form-group">
+               <label for="password" class="control-label col-md-3">Your password *</label>
+                 <div class="col-md-3">
+                   <input type="password" class="form-control input-sm" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,18}" title="Your password must contain at least one number and one uppercase and lowercase letter, from 6 to 18 characters" required placeholder="Enter the password" maxlength="18"/></br>
+                 </div>
+              
+         
+               <label for="repeat_password" class="control-label col-md-3">Repeat password *</label>
+                 <div class="col-md-3">
+                   <input type="password" class="form-control input-sm" name="repeat_password" id="repeat_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,18}" title="Your password must contain at least one number and one uppercase and lowercase letter, from 6 to 18 characters" required maxlength="18"/></br>
+                 </div>
+             </div>
+           
+               
+             <div class="form-group">
+               <label for="email" class="col-md-2 control-label">Email *</label>
+                 <div class="col-md-10">
+                  <input type="email" class="form-control input-sm" name="email" id="email" pattern="([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})" title="Plase enter your real email" placeholder="john_doe@example.com" required/></br>
+                 </div> 
+             </div>
+
+             <div class="form-group">
+               <label for="date" class="col-md-2 control-label">Birthdate </label>
+                 <div class="col-md-10">
+                   <input type="date" class="form-control input-sm" name="bday" id="date" min="1920-12-31" max="2015-12-31"/></br>
+                 </div>  
+             </div>  
+          </fieldset>
+         
+
+          <fieldset>
+          	<legend>
+          		Your Address:
+          	</legend>
+
+              <div class="form-group">
+          	    <label for="town" class="col-md-2 control-label">Town *</label>
+                  <div class="col-md-5">
+                   <input type="text" class="form-control input-sm" name="town" id="town" pattern="[a-zA-Z ]+" title="Please enter the real town" required/></br>
+                 </div>  
+              
+              
+             <label for="postal_index" class="col-md-2 control-label">Postcode </label>
+                   <div class="col-md-3">
+                    <input type="number" class="form-control" name="postal_index" id="postal_index" placeholder="XXXXX"/></br>
+                  </div>  
+              </div>
+              
+
+          	  <div class="form-group">
+               <label class="col-md-2 control-label">Region: </label>
+                 <div class="col-md-10">
+                  <select class="form-control input-sm" name="region">
+                     <option value ="select_option" selected="selected">Please select your region</option>
+           	         <option value="Cherkasy">Cherkasy Oblast</option>
+           	         <option value ="Chernihiv">Chernihiv Oblast</option>
+                     <option value ="Chernivtsi">Chernivtsi Oblast</option>
+                     <option value ="Dnipropetrovsk">Dnipropetrovsk Oblast</option>
+                     <option value ="Donetsk">Donetsk Oblast</option>
+                     <option value ="Ivano-Frankivsk">Ivano-Frankivsk Oblast</option>
+                     <option value ="Kharkiv">Kharkiv Oblast</option>
+                     <option value ="Kherson">Kherson Oblast</option>
+                     <option value ="Khmelnytskyi">Khmelnytskyi Oblast</option>
+                     <option value ="Kiev">Kiev Oblast</option>
+                     <option value ="Kirovograd">Kirovograd Oblast</option>
+                     <option value ="Luhansk">Luhansk Oblast</option>
+                     <option value ="Lviv">Lviv Oblast</option>
+                     <option value ="Mykolaiv">Mykolaiv Oblast</option>
+                     <option value ="Odessa">Odessa Oblast</option>
+                     <option value ="Poltava">Poltava Oblast</option>
+                     <option value ="Rivne">Rivne Oblast</option>
+                     <option value ="Sumy">Sumy Oblast</option>
+                     <option value ="Ternopil">Ternopil Oblast</option>
+                     <option value ="Vinnytsia">Vinnytsia Oblast</option>
+                     <option value ="Volyn">Volyn Oblast</option>
+                     <option value ="Zakarpattia">Zakarpattia Oblast</option>
+                     <option value ="Zaporizhia">Zaporizhia Oblast</option>
+                     <option value ="Zhytomyr">Zhytomyr Oblast</option>
+                  </select></br>
+                 </div> 
+                </div>
+                <div class="form-group">  
+          	      <label for="street" class="col-md-2 control-label">Street </label>
+                    <div class="col-md-5">
+                      <input type="text" class="form-control input-sm" name="street" id="street" pattern="[a-zA-Z ]+" title="Please enter the real street"/></br>
+                    </div>  
+                
+
+                  <label for="house_number" class="col-md-2 control-label">House № </label>
+                    <div class="col-md-3">
+                     <input type="number" class="form-control input-sm" name="house_number" id="house_number"/></br>
+                   </div>  
+                </div>  
+          </fieldset>
+
+
+
+          <fieldset>
+            <legend> 
+             What are your hobbies? 
+            </legend>
+
+             
+
+               <label class="checkbox-inline" for="sport">Sport </label>
+               <input type="checkbox" name="sport" id="sport" value="sport"/>
+
+               <label class="checkbox-inline" for="music">Music </label>
+               <input type="checkbox" name="music" id="music" value="music"/>
+
+               <label class="checkbox-inline" for="biking">Biking </label>
+               <input type="checkbox" name="biking" id="biking" value="biking"/>
+
+               <label class="checkbox-inline" for="photo">Photography </label>
+               <input type="checkbox" name="photo" id="photo" value="photography"/>
+
+               <label class="checkbox-inline" for="travel">Traveling </label>
+               <input type="checkbox" name="travel" id="travel" value="traveling"/>
+
+               <label class="checkbox-inline" for="games">Computer games </label>
+               <input type="checkbox" name="games" id="games" value="games"/>
+               </fieldset></br>
+
+
+              
+
+               <fieldset>
+                 <legend> 
+                   How did you find us?
+                 </legend>
+                   <input type="text" class="form-control input-sm" name="places" id="places" list="place_list" placeholder="i.e. From friends">
+                   <datalist id="place_list">
+                      <option value="Friends" selected="selected">
+                      <option value="Internet">
+                      <option value="Outdoor Advertising">
+                      <option value="Flyers">
+                      <option value="Radio">
+                   </datalist>
+               </fieldset>
+          </br>
+                    
+
+           <input type="reset" value="reset" class="btn btn-default"/>
+           <input type="submit" value="submit" class="btn btn-success"/>
+
+        </form>
+      </div>
+  </body>
+</html>
