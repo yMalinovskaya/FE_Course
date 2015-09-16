@@ -11,6 +11,12 @@ body {
 	background: #f3fff3;
 }
 
+input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: -1px;
+}
+
 h1 {
 	color: #006900;
 }
