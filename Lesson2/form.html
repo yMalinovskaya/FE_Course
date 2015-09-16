@@ -26,14 +26,15 @@
 
 
              <div class="form-group">
-                 <label for="name" class="col-md-2 control-label">Name *</label>
+                 <label for="name" class="col-md-2 control-label">Name&nbsp;*</label>
                  <div class="col-md-10">
                    <input type="text" class="form-control input-sm" name="name" id="name" pattern="[a-zA-Z\- ]+" title="Please enter your real name" placeholder="Enter your name" required autofocus/></br>
                  </div>
              </div>
 
              <div class="form-group">
-                 <label for="surname" class="col-md-2 control-label">Surname *</label>
+                 <label for="surname" class="col-md-2 control-label">Surname&nbsp;*</label>
+                  <!--используйте неразрывнй пробел для того, чтоб ваша строка не расползлась-->
                  <div class="col-md-10"> 
                    <input type="text" class="form-control input-sm" name="surname" id="surname" pattern="[a-zA-Z\- ]+" title="Plese enter your real surname" placeholder="Enter your surname" required/></br>
                  </div>  
@@ -66,6 +67,7 @@
                <label for="email" class="col-md-2 control-label">Email *</label>
                  <div class="col-md-10">
                   <input type="email" class="form-control input-sm" name="email" id="email" pattern="([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})" title="Plase enter your real email" placeholder="john_doe@example.com" required/></br>
+                  <!--не обязательно указывать патерн для input:email-->
                  </div> 
              </div>
 
@@ -93,6 +95,7 @@
              <label for="postal_index" class="col-md-2 control-label">Postcode </label>
                    <div class="col-md-3">
                     <input type="number" class="form-control" name="postal_index" id="postal_index" placeholder="XXXXX"/></br>
+                    <!--Может быть не обязательно числом-->
                   </div>  
               </div>
               
@@ -138,7 +141,12 @@
 
                   <label for="house_number" class="col-md-2 control-label">House № </label>
                     <div class="col-md-3">
+<<<<<<< HEAD
                      <input type="number" class="form-control input-sm" name="house_number" id="house_number"/><br>
+=======
+                     <input type="number" class="form-control input-sm" name="house_number" id="house_number"/></br>
+                     <!--Может быть не обязательно числом-->
+>>>>>>> 9157e34725ef2d4ce6edcae1157bf75295d5bd7b
                    </div>  
                 </div>  
           </fieldset>
