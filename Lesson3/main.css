@@ -1,0 +1,167 @@
+.container-fluid {
+	margin: 15px;
+}
+
+
+.gray-box {
+	background-color: #737373;
+}
+
+.lightgray-box {
+	background-color: #dfdfdf;
+}
+
+.bottom {
+    border-bottom: 1px solid #737373;
+    margin-bottom: 15px;
+}
+
+
+.header_info  {
+	text-align: right;
+	line-height: 2;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+}
+
+.header_info a{
+   color:white;
+}
+
+
+.blockset {
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+
+.row .row-3 {
+	clear: both;
+}
+
+.first_list {
+	list-style-type: none;
+	font-size: 12px;
+}
+
+.first_list a{
+	color: white;
+}
+
+.first_list li:first-child {
+	font-weight: bold;
+}
+
+.second_list {
+	-moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count:2;
+    padding-top: 10px;
+    list-style-type: none;
+	font-size: 12px;
+	color: white;
+}
+ 
+ .second_list a{
+ 	color:white;
+ }
+
+.third_list {
+	list-style-type: square;
+	margin-top: 10px;
+	font-size: 12px;
+	color: white;
+}
+
+.third_list a{
+	color: white;
+}
+
+
+.row-3 .col-xs-12 {
+	font-size: 12px;
+	color: #737373;
+}
+
+.studio_name {
+	font-weight: bold;
+	color: black;
+}
+
+.row-3 .col-lg-3 {
+	position: relative;
+	bottom: -75px;
+}
+
+
+
+
+
+.well-5 {
+	height: 200px;
+}
+
+.well-13 {
+	height: 125px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	.header_info {
+		font-size: 10.5px;
+	} 
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.row-3 .col-xs-12 {
+		width: 50%;
+	}
+
+	.halfWidth {
+    	width: 50%;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+	    .fixed {
+		margin: 0 auto 15px;
+		width: 200px;
+		height: 130px;
+	}
+	
+}
+
+
+@media screen and (min-width: 1200px) {
+	.container-fluid {
+		margin: 15px auto;
+		width: 95%;
+	}
+
+	.well-1, .well-2, .well-3 {
+		height: 130px;
+	}
+
+   
+    .well-14, .well-15, .well-16, .well-17 {
+  	   height: 200px;
+    }
+
+
+    .well-18, .well-19 {
+	   height: 90px;
+    }
+}
+
+
+
+
