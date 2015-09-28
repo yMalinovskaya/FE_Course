@@ -8,10 +8,10 @@
     <script type="text/javascript">
         $("document").ready(function() {
         	
-          ($(".loading")).replaceWith($(".hidden").toggle());
+          $(".loading").html($(".hidden").html());
         
-          var list = $("header ul");
-          var listItems = list.children("li");
+          var $list = $("header ul");
+          var $listItems = $list.children("li");
           list.append(listItems.get().reverse());
 
           var spanCount = $("span").length;
