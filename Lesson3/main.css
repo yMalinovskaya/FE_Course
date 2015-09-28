@@ -25,11 +25,6 @@
 	color: white;
 }
 
-.header_info a{
-   color:white;
-}
-
-
 .blockset {
 	width: 150px;
 	height: 150px;
@@ -45,9 +40,6 @@
 	font-size: 12px;
 }
 
-.first_list a{
-	color: white;
-}
 
 .first_list li:first-child {
 	font-weight: bold;
@@ -63,10 +55,6 @@
 	color: white;
 }
  
- .second_list a{
- 	color:white;
- }
-
 .third_list {
 	list-style-type: square;
 	margin-top: 10px;
@@ -74,7 +62,7 @@
 	color: white;
 }
 
-.third_list a{
+.header_info a, .first_list a, .second_list a, .third_list a{
 	color: white;
 }
 
